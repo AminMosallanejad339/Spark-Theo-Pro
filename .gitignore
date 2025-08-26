@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+# OS
+.DS_Store
+Thumbs.db
+# Data (optional – keep repo light)
+data/
+outputs/

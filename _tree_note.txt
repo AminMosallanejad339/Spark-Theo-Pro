@@ -1,0 +1,2 @@
+This repository was generated with a Python script.
+Use this as your Spark learning workspace and portfolio.
