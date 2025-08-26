@@ -2,7 +2,7 @@
 
 ------
 
-# Spark-Theo: Apache Spark Learning Roadmap (Data Engineering Focus)
+# Spark-Theo: Apache Spark Learning Roadmap 
 
 Welcome to **Spark-Theo** — a structured roadmap and hands-on portfolio for mastering **Apache Spark** with a focus on **Data Engineering**.  
 This repository contains **theory notes**, **practice notebooks**, and **end-to-end projects**, organized in a way to help you build Spark expertise step by step.  
@@ -214,4 +214,5 @@ Spark-Theo/
 ## ✅ Goal
 
 ![Chart-2025-08-26-165220](Chart-2025-08-26-165220.png)
+
 
