@@ -213,12 +213,5 @@ Spark-Theo/
 
 ## ✅ Goal
 
-By completing this repo, you will:  
-- Understand **all major components** of Apache Spark  
-- Build **real-world Data Engineering pipelines**  
-- Create a **GitHub portfolio** showcasing Spark knowledge  
-- Be ready for **Data Engineering interviews & projects**  
-
-
-
 ![Chart-2025-08-26-165220](Chart-2025-08-26-165220.png)
+
