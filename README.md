@@ -2,9 +2,7 @@
 
 ------
 
-# 📘 Full README.md for `Spark-Theo`
-
-# 🚀 Spark-Theo: Apache Spark Learning Roadmap (Data Engineering Focus)
+# Spark-Theo: Apache Spark Learning Roadmap (Data Engineering Focus)
 
 Welcome to **Spark-Theo** — a structured roadmap and hands-on portfolio for mastering **Apache Spark** with a focus on **Data Engineering**.  
 This repository contains **theory notes**, **practice notebooks**, and **end-to-end projects**, organized in a way to help you build Spark expertise step by step.  
@@ -46,22 +44,100 @@ Key features:
 
 ## 📂 Repository Structure
 
-This repo is structured into **modules**, each covering a major Spark concept.  
-
+```bash
 Spark-Theo/
- │── 00-Setup/                  # Install Spark, setup environment, architecture notes
- │── 01-Spark-Core-RDDs/         # RDD fundamentals, transformations, actions
- │── 02-DataFrames-SQL/          # DataFrames API & Spark SQL queries
- │── 03-Data-Sources/            # Working with CSV, JSON, Parquet, JDBC, Hive, S3, HDFS
- │── 04-Streaming/               # Structured Streaming, Kafka integration
- │── 05-Performance-Optimization/ # Catalyst, Tungsten, partitioning, shuffles, caching
- │── 06-Advanced-Topics/         # Delta Lake, CDC, schema evolution, data quality
- │── 07-MLlib-(Optional)/        # Machine Learning pipelines in Spark
- │── 08-Deployment-Monitoring/   # spark-submit, cluster managers, Spark UI, CI/CD
- │── 09-Projects/                # End-to-end batch + streaming projects
- │── 10-Resources/               # Books, courses, cheatsheets, interview prep
- │── README.md                   # This file
- │── LICENSE
+│── README.md                        # Overview of repo, roadmap, progress tracker
+│── 00-Setup/
+│   ├── spark_installation.md        # Local installation steps (PySpark, Hadoop)
+│   ├── environment_setup.md         # Conda/venv setup, Jupyter config
+│   ├── spark_architecture.md        # Notes on Driver, Executors, Cluster Managers
+│
+│── 01-Spark-Core-RDDs/
+│   ├── notes_rdd.md                 # Theory of RDDs
+│   ├── rdd_basics.ipynb             # Creating RDDs, transformations, actions
+│   ├── rdd_keyvalue.ipynb           # Key-Value RDD operations
+│   ├── rdd_persistence.ipynb        # Cache & persist examples
+│   ├── rdd_case_study.ipynb         # Example: word count, log analysis
+│
+│── 02-DataFrames-SQL/
+│   ├── notes_dataframe_sql.md       # Notes on DataFrames & Spark SQL
+│   ├── dataframe_basics.ipynb       # Creating & exploring DataFrames
+│   ├── dataframe_transformations.ipynb
+│   ├── dataframe_joins.ipynb        # Joins, aggregations
+│   ├── dataframe_window.ipynb       # Window functions
+│   ├── sql_queries.ipynb            # Register temp views, SQL queries
+│   ├── dataframe_case_study.ipynb   # Example: Sales analysis, KPI dashboards
+│
+│── 03-Data-Sources/
+│   ├── notes_datasources.md         # Overview of formats & connectors
+│   ├── read_write_csv_json.ipynb
+│   ├── read_write_parquet_orc.ipynb
+│   ├── jdbc_hive_integration.ipynb
+│   ├── s3_hdfs_integration.md
+│   ├── datasources_case_study.ipynb # Example: Data Lake ingestion pipeline
+│
+│── 04-Streaming/
+│   ├── notes_streaming.md           # Spark Streaming concepts
+│   ├── structured_streaming_basics.ipynb
+│   ├── kafka_integration.ipynb
+│   ├── watermarking_windowing.ipynb
+│   ├── streaming_case_study.ipynb   # Example: Real-time log analysis
+│
+│── 05-Performance-Optimization/
+│   ├── notes_optimization.md        # Spark internals (Catalyst, Tungsten)
+│   ├── caching_partitioning.ipynb
+│   ├── shuffle_optimizations.ipynb
+│   ├── broadcast_joins.ipynb
+│   ├── skew_handling.ipynb
+│   ├── optimization_case_study.ipynb # Example: speeding up ETL pipeline
+│
+│── 06-Advanced-Topics/
+│   ├── notes_advanced.md            # Delta Lake, Iceberg, CDC, Schema evolution
+│   ├── delta_lake_basics.ipynb
+│   ├── schema_evolution.ipynb
+│   ├── cdc_pipeline.md
+│   ├── data_quality_checks.ipynb
+│   ├── advanced_case_study.ipynb    # Example: Lakehouse pipeline
+│
+│── 07-MLlib-(Optional)/
+│   ├── notes_mllib.md               # MLlib overview
+│   ├── feature_engineering.ipynb
+│   ├── classification_pipeline.ipynb
+│   ├── clustering_pipeline.ipynb
+│   ├── regression_pipeline.ipynb
+│
+│── 08-Deployment-Monitoring/
+│   ├── notes_deployment.md          # Deployment concepts
+│   ├── spark_submit_examples.md     # How to submit jobs
+│   ├── cluster_managers.md          # YARN, K8s, Standalone
+│   ├── monitoring_spark_ui.md
+│   ├── cicd_integration.md
+│
+│── 09-Projects/
+│   ├── Batch-ETL-Pipeline/
+│   │   ├── etl_pipeline.ipynb       # CSV → clean → Parquet → DB
+│   │   ├── README.md
+│   │
+│   ├── Real-Time-Streaming-Pipeline/
+│   │   ├── streaming_pipeline.ipynb # Kafka → Spark → Cassandra
+│   │   ├── README.md
+│   │
+│   ├── Data-Lakehouse/
+│   │   ├── lakehouse_pipeline.ipynb # S3/ADLS + Delta Lake + Spark SQL
+│   │   ├── README.md
+│   │
+│   ├── Log-Analytics/
+│   │   ├── log_analytics_pipeline.ipynb
+│   │   ├── README.md
+│
+│── 10-Resources/
+│   ├── books.md                     # Recommended books
+│   ├── courses.md                   # Free/paid courses
+│   ├── cheatsheets.md               # Spark & PySpark cheatsheets
+│   ├── interview_questions.md       # Spark DE interview prep
+│
+└── LICENSE
+```
 
 ---
 
